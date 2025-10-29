@@ -1,8 +1,9 @@
 
 .App {
   text-align: center;
-  background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
+  background: linear-gradient(135deg, #e0eafc 0%, #a1c4fd 100%);
   min-height: 100vh;
+  color: #1a2233;
 }
 
 
@@ -10,24 +11,17 @@
   height: 60px;
   pointer-events: none;
   margin-right: 16px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  padding: 4px;
 }
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
-}
-
-
-.App-header {
-  background: #1a2233;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: #f7fafc;
 }
 
 
@@ -48,43 +42,54 @@
   color: #222;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  border: 2px solid #a1c4fd;
 }
 .table-custom th {
-  background: #007bff;
+  background: linear-gradient(90deg, #007bff 0%, #00c6ff 100%);
   color: #fff;
+  font-weight: 700;
 }
 .table-custom tr:nth-child(even) {
   background: #e9f2fb;
 }
+.table-custom tr:hover {
+  background: #d1eaff;
+}
 
 /* Bootstrap button custom colors */
 .btn-custom {
-  background: #007bff;
+  background: linear-gradient(90deg, #00b894 0%, #00c6ff 100%);
   color: #fff;
   border: none;
   border-radius: 4px;
   transition: background 0.2s;
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
 }
 .btn-custom:hover {
-  background: #0056b3;
+  background: linear-gradient(90deg, #0984e3 0%, #00b894 100%);
 }
 
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
-  color: #1a2233;
+  color: #007bff;
   font-weight: 700;
+  letter-spacing: 1px;
+  text-shadow: 0 1px 2px #e0eafc;
 }
 
 /* Navbar custom */
 .navbar {
   background: linear-gradient(90deg, #007bff 0%, #00c6ff 100%) !important;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
 .navbar .navbar-brand, .navbar .nav-link {
   color: #fff !important;
-  font-weight: 500;
+  font-weight: 600;
+  letter-spacing: 1px;
 }
 .navbar .nav-link.active, .navbar .nav-link:focus, .navbar .nav-link:hover {
-  color: #222 !important;
+  color: #00b894 !important;
   background: rgba(255,255,255,0.2);
   border-radius: 4px;
 }

@@ -1,0 +1,99 @@
+
+.App {
+  text-align: center;
+  background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
+  min-height: 100vh;
+}
+
+
+.App-logo {
+  height: 60px;
+  pointer-events: none;
+  margin-right: 16px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+
+.App-header {
+  background: #1a2233;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: #f7fafc;
+}
+
+
+.App-link {
+  color: #007bff;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.App-link:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+/* Bootstrap table custom colors */
+.table-custom {
+  background: #f8fafc;
+  color: #222;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+.table-custom th {
+  background: #007bff;
+  color: #fff;
+}
+.table-custom tr:nth-child(even) {
+  background: #e9f2fb;
+}
+
+/* Bootstrap button custom colors */
+.btn-custom {
+  background: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+.btn-custom:hover {
+  background: #0056b3;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  color: #1a2233;
+  font-weight: 700;
+}
+
+/* Navbar custom */
+.navbar {
+  background: linear-gradient(90deg, #007bff 0%, #00c6ff 100%) !important;
+}
+.navbar .navbar-brand, .navbar .nav-link {
+  color: #fff !important;
+  font-weight: 500;
+}
+.navbar .nav-link.active, .navbar .nav-link:focus, .navbar .nav-link:hover {
+  color: #222 !important;
+  background: rgba(255,255,255,0.2);
+  border-radius: 4px;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
